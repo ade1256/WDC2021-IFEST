@@ -50,19 +50,19 @@
       <section id="menuMobile">
         <ul>
           <li>
-            <a href="#" id="linkToHome">Beranda</a>
+            <a href="#" id="linkToHomeMobile">Beranda</a>
           </li>
           <li>
-            <a href="#" id="linkToAbout">Tentang</a>
+            <a href="#" id="linkToAboutMobile">Tentang</a>
           </li>
           <li>
-            <a href="#" id="linkToExplore">Jelajahi</a>
+            <a href="#" id="linkToExploreMobile">Jelajahi</a>
           </li>
           <li>
-            <a href="#" id="linkToExplore">Masuk</a>
+            <a href="/login.html">Masuk</a>
           </li>
           <li>
-            <a href="#" id="linkToExplore">Buat Campaign</a>
+            <a href="/buatCampaign.html">Buat Campaign</a>
           </li>
         </ul>
       </section>
@@ -88,10 +88,10 @@
         <div class="right">
           <ul>
             <li>
-              <button class="btn link primary">Masuk</button>
+              <a class="btn link primary" href="/login.html">Masuk</a>
             </li>
             <li>
-              <button class="btn primary">Buat Campaign</button>
+              <a class="btn primary" href="/buatCampaign.html">Buat Campaign</a>
             </li>
           </ul>
         </div>
@@ -206,14 +206,14 @@
                 </div>
                 <div class="desc">
                   <div class="title">
-                    Bantu warga desa terpencil yang kelaparan
+                    Bantu korban banjir di Jakarta Barat
                   </div>
                 </div>
                 <div class="avatar">
                   <div class="image">
-                    <img src="assets/img/avatar_blue.svg" alt="avatar" />
+                    <img src="assets/img/avatar.jpg" alt="avatar" />
                   </div>
-                  <div class="text">by Marcel Sinaga</div>
+                  <div class="text">by Ade Prasetyo</div>
                 </div>
                 <div class="progressBar">
                   <div class="filler" style="width: 40%">
@@ -539,7 +539,7 @@
             <div class="donatur">
               <div class="avatar">
                 <img
-                  src="assets/img/avatar_blue.svg"
+                  src="assets/img/avatar.jpg"
                   alt="donatur"
                   class="img"
                 />
@@ -793,7 +793,7 @@
     $(".owl-carousel").owlCarousel({
       loop: false,
       margin: 16,
-      nav: false,
+      nav: true,
       autoWidth: true,
       responsive: {
         0: {
