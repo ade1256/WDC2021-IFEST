@@ -1,4 +1,4 @@
-@primary: #6067f1;
+@primary: #03af60;
 @secondary: #0acd9d;
 @black: #2b4a5b;
 
@@ -34,6 +34,9 @@ p {
   padding: 0;
   color: #2b4a5b;
 }
+#navbarMobile, #menuMobile {
+  display: none;
+}
 
 .navbar {
   background-color: #fff;
@@ -42,10 +45,19 @@ p {
   padding: 8px 5%;
   border-bottom: 1px solid #ddd;
   .left {
-    width: 40%;
+    width: 20%;
+  }
+  .menuCenter {
+    width: 60%;
+    text-align: center;
+    ul {
+      position: relative;
+      margin: 0 auto;
+      width: max-content;
+    }
   }
   .right {
-    width: 60%;
+    width: 20%;
   }
   .logo {
     position: relative;
@@ -82,11 +94,61 @@ p {
 #header {
   position: relative;
   padding: 8px 5%;
-  background-image: url(../img/bg.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 70%;
-  height: 780px;
+  display: flex;
+  margin: 64px 0px;
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
+  .wrapBtnHeader {
+    margin: 32px 0px;
+    .btn {
+      margin: 0px 16px;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #2b4a5b;
+    margin: 8px 0px;
+  }
+  .pre-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'PoppinsBold', sans-serif;
+    color: @secondary;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 26px;
+    font-family: 'PoppinsLight', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .desc {
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: #2b4a5b;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+  .separator {
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: @secondary;
+    position: relative;
+    margin: 16px 0px;
+  }
   h2 {
     font-size: 32px;
     letter-spacing: 1.5px;
@@ -138,7 +200,7 @@ p {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  top: 40px;
+  top: 70px;
   padding-bottom: 30px;
   .pre-title {
     font-size: 12px;
@@ -215,11 +277,14 @@ p {
 
 #telahDonasi {
   padding: 48px 5%;
+  position: relative;
+  margin-top: 32px;
 }
 
 #about {
   display: flex;
   padding: 0px 5%;
+  margin-top: 32px;
   .left {
     width: 40%;
     padding: 16px;
@@ -382,7 +447,7 @@ p {
   display: block;
 }
 .wrapCarousel {
-  padding: 32px 5%;
+  padding: 8px 5%;
 }
 .daftar {
   border-left: 1px solid #ddd; padding-left: 16px!important;
@@ -391,3 +456,4 @@ p {
 @import "campaign.less";
 @import "avatar.less";
 @import "footer.less";
+@import "responsive.less";
