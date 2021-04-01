@@ -1,3 +1,7 @@
+@primary: #6067f1;
+@secondary: #0acd9d;
+@black: #2b4a5b;
+
 @font-face {
   font-family: "PoppinsRegular";
   src: url(../fonts/Poppins-Regular.ttf);
@@ -94,6 +98,10 @@ p {
     margin: 0 auto;
     margin-top: 80px;
     width: 40em;
+    .btn.primary.large {
+      margin-right: 8px;
+    }
+    p{margin: 32px 0px;}
   }
 }
 
@@ -131,6 +139,7 @@ p {
   margin: 0 auto;
   text-align: center;
   top: 40px;
+  padding-bottom: 30px;
   .pre-title {
     font-size: 12px;
     text-transform: uppercase;
@@ -145,8 +154,10 @@ p {
     letter-spacing: 1.5px;
   }
   .desc {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 24px;
+    color: #2b4a5b;
+    line-height: 24px;
   }
   .separator {
     content: ' ';
@@ -159,7 +170,7 @@ p {
   }
 }
 
-#campaigns {
+.campaigns {
   position: relative;
   width: 100%;
   margin: 32px 0px;
@@ -172,6 +183,13 @@ p {
       display: flex;
     }
   }
+}
+
+#campaigns-terbaru {
+  margin-top: 90px; display: inline-block
+}
+#campaigns-hampir {
+  margin-top: 30px; display: inline-block
 }
 
 .select {
@@ -195,6 +213,145 @@ p {
   
 }
 
+#telahDonasi {
+  padding: 48px 5%;
+}
+
+#about {
+  display: flex;
+  padding: 0px 5%;
+  .left {
+    width: 40%;
+    padding: 16px;
+  }
+  .pre-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'PoppinsBold', sans-serif;
+    color: @secondary;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 26px;
+    font-family: 'PoppinsLight', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .desc {
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: #2b4a5b;
+    line-height: 24px;
+  }
+  .separator {
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: @secondary;
+    position: relative;
+  }
+  p {
+    margin: 16px 0px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .right {
+    width: 60%;
+  }
+}
+
+.multiImage {
+  position: relative;
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+  img {
+    width: 300px;
+    background: #fff;
+    border: 8px solid #FFF;
+    border-radius: 8px;
+  }
+  img:nth-child(1) {
+    position: absolute;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    right: 0;
+  }
+  img:nth-child(3) {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    right: 0;
+    margin: 0 auto;
+    top: 35%;
+    z-index: 1;
+  }
+  img:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  img:nth-child(5) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+#whyChooseUs {
+  margin: 60px 0px;
+}
+.bgBlue {
+  background: @primary;
+  color: #FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .center {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: 20px;
+    padding-bottom: 30px;
+    .pre-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: 'PoppinsBold', sans-serif;
+      color: #FFF;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 26px;
+      font-family: 'PoppinsLight', sans-serif;
+      letter-spacing: 1.5px;
+      color: #FFF;
+      h3 {
+        color: #FFF;
+      }
+    }
+    .desc {
+      font-size: 14px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      color: #FFF;
+      line-height: 24px;
+    }
+    .separator {
+      content: ' ';
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: #FFF;
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+}
+
 @import "button.less";
 @import "campaign.less";
 @import "avatar.less";
+@import "footer.less";

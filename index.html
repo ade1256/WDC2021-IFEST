@@ -10,7 +10,7 @@
     <link rel="stylesheet/less" type="text/css" href="assets/css/global.less" />
   </head>
   <body>
-    <div class="navbar" id="navbar">
+    <section class="navbar" id="navbar">
       <div class="left">
         <div class="logo">
           <img src="assets/img/logoBiru.svg" />
@@ -38,24 +38,24 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div id="header">
+    </section>
+    <section id="header">
       <div class="wrapInfo">
         <h2>Strengthen Togetherness by Helping Others</h2>
-        <p style="margin: 32px 0px">
+        <p>
           Sekecil apapun bantuan dari anda, akan sangat berarti untuk mereka
           yang membutuhkan
         </p>
         <div>
-          <button class="btn primary large" style="margin-right: 8px">
+          <button class="btn primary large">
             Jelajahi Campaign
           </button>
           <button class="btn border primary large">Buat Campaign</button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="counter">
+    <section id="counter">
       <div class="count">
         <div class="icon">
           <img src="assets/icons/iconFunded.svg" alt="funded" />
@@ -92,18 +92,18 @@
           <span>Rp 92.699.565</span>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="center">
+    <section class="center">
       <div class="pre-title">Mereka yang membutuhkan bantuan</div>
-      <div class="title">Jelajahi Campaign</div>
+      <div class="title"><h3>Jelajahi Campaign</h3></div>
       <div class="desc">
         Beberapa campaign terbaru dan mulailah membantu suatu hari
       </div>
       <div class="separator"></div>
-    </div>
+    </section>
 
-    <section id="campaigns" style="margin-top: 90px; display: inline-block">
+    <section id="campaigns-terbaru" class="campaigns">
       <div class="wrap">
         <div class="title">Terbaru</div>
         <div class="filter">
@@ -323,7 +323,7 @@
       </div>
     </section>
 
-    <section id="campaigns" style="margin-top: 30px; display: inline-block">
+    <section id="campaigns-hampir" class="campaigns">
       <div class="wrap">
         <div class="title">Hampir Selesai</div>
       </div>
@@ -432,14 +432,14 @@
       </div>
     </section>
 
-    <div class="center" style="padding-bottom: 30px">
+    <section class="center">
       <div class="pre-title">Mereka yang telah memberi</div>
-      <div class="title">Latest Donatur</div>
+      <div class="title"><h3>Latest Donatur</h3></div>
       <div class="desc">Orang-orang baik yang telah menolong</div>
       <div class="separator"></div>
-    </div>
+    </section>
 
-    <div style="padding: 48px 5%">
+    <section id="telahDonasi">
       <div class="owl-carousel owl-theme" id="donatur">
         <div class="item">
           <div class="donatur">
@@ -525,8 +525,94 @@
             </div>
           </div>
         </div>
+        <div class="item">
+          <div class="donatur">
+            <div class="avatar">
+              <img src="assets/img/avatar_blue.svg" alt="donatur" class="img" />
+            </div>
+            <div class="name">Bpk. Prabowo</div>
+            <div class="counter">
+              <div class="label">Donasi</div>
+              <div class="total">Rp 3.000.000</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="about">
+     <div class="left">
+      <div class="pre-title">Yang perlu kamu ketahui</div>
+      <div class="title"><h1>Tentang Bantuin</h1></div>
+      <div class="desc">Bantuin merupakan wadah para donatur kepada seseorang atau kelompok yang membutuhkan bantuan kita</div>
+      <div class="separator"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis saepe fugiat facere debitis laborum quidem, voluptatum quis, non, consectetur distinctio pariatur rem? Necessitatibus illum temporibus qui modi aut. Possimus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis saepe fugiat facere debitis laborum quidem, voluptatum quis, non, consectetur distinctio pariatur rem? Necessitatibus illum temporibus qui modi aut. Possimus.</p>
+     </div>
+     <div class="right">
+       <div class="multiImage">
+         <img src="assets/img/imgHappy1.jpg" alt="terbantu" />
+         <img src="assets/img/imgHappy2.jpg" alt="terbantu" />
+         <img src="assets/img/imgHappy5.jpg" alt="terbantu" />
+         <img src="assets/img/imgHappy4.png" alt="terbantu" />
+         <img src="assets/img/imgHappy3.jpg" alt="terbantu" />
+       </div>
+     </div>
+    </section>
+
+    <section id="whyChooseUs" class="bgBlue">
+      <div class="center">
+        <div class="pre-title">Mengapa harus percaya dengan kami</div>
+        <div class="title"><h3>Satu satunya platform donasi yang ada di Indonesia dijamin amanah</h3></div>
+        <div class="desc">100% bantuan anda tersalurkan kepada orang yang tepat</div>
+        <div class="separator"></div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="row">
+        <div class="col">
+          <div class="title">
+            <img src="assets/img/logoBiru.svg" alt="logobantuin" />
+          </div>
+          <p>Bantuin merupakan wadah para donatur kepada seseorang atau kelompok yang membutuhkan bantuan kita</p>
+        </div>
+        <div class="col">
+          <div class="title">Fitur</div>
+          <ul>
+            <li><a href="#">Buat Campaign</a></li>
+            <li><a href="#">Lapor Campaign</a></li>
+            <li><a href="#">Kontak Kami</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="title">Navigasi</div>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Jelajahi Campaign</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Masuk</a></li>
+            <li><a href="#">Daftar</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="title">Social Media</div>
+          <div class="socialMedia">
+            <img src="assets/icons/fb.svg" />
+            Bantuin Official
+          </div>
+          <div class="socialMedia">
+            <img src="assets/icons/ig.svg" />
+            @bantuin.official
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="copyright">
+          Copyright &copy; 2021. All right reserved.
+        </div>
+      </div>
+    </section>
   </body>
   <script src="assets/plugins/jquery.js"></script>
   <script src="assets/plugins/owl.carousel.min.js"></script>
